@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+
+
+domain: reacher
+task: hard
+type: medium
+mode: medium_extended
+
+
+nstep: 3
+lr: 3e-4

@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+
+
+domain: reacher
+task: easy
+type: medium
+mode: easy_extended
+
+
+nstep: 3
+lr: 3e-4

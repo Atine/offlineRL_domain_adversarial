@@ -1,0 +1,19 @@
+# cache
+*.swp
+__pycache__/
+.DS_Store
+
+
+# output
+results/
+csvs/
+investigations/
+logs/
+remote_logs
+backup/
+.ipynb_checkpoints
+notebooks/
+
+
+# run scripts
+run*.sh

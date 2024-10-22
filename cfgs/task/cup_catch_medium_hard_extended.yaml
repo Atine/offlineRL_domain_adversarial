@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+
+
+domain: ball_in_cup
+task: catch
+type: medium
+mode: hard_extended
+
+
+nstep: 3
+lr: 3e-4

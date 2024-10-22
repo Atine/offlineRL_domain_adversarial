@@ -1,0 +1,66 @@
+defaults:
+  - _self_
+  - task: cheetah_run_expert_easy
+  - algo: drqv2_default
+
+
+# RL env settings
+seed: 0
+gpu: ...
+device: ...
+nstep: 3
+frame_stack: 3
+action_repeat: 2
+num_timesteps: 1_000_000
+replay_buffer_size: 1_000_000
+replay_buffer_num_workers: 1
+distracting_mode: True
+eval_episodes: 30
+offline_dir: ...
+offline_dir_dis: ...
+extended_dataset: False
+
+
+# RL algo settings
+discount: 0.99
+batch_size: 256
+augmentation: 1
+ff_scale: 2.0
+lr: 3e-4
+feature_dim: 50
+stddev_schedule: 'linear(1.0,0.1,250000)'
+
+
+# logging settings
+additional: ''
+no_track: False
+show_stats_freq: 2000
+eval_freq: 20000
+eval_on_distracting: True
+eval_parallel_jobs: 1
+save_video: False
+save_video_freq: 50000
+calculate_bias: False
+plot_bellman: False
+
+
+# offline
+offline: True
+bc_weight: 2.5
+use_bc: True
+pixel_hw: 84
+
+
+# awac
+awac_lambda: 0.3
+
+
+# ours
+dropblock: 0.3
+
+
+hydra:
+  run:
+    dir: logs/${task.domain}_${task.task}/${task.type}_${task.mode}/${algo.algo_name}/seed${seed}_${now:%Y%m%d}_${now:%H%M%S}${additional}
+  job:
+    chdir: True

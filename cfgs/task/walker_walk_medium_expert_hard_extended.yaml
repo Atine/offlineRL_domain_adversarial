@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+
+
+domain: walker
+task: walk
+type: medium_expert
+mode: hard_extended
+
+
+nstep: 3
+lr: 3e-4
