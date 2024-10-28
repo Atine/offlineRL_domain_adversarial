@@ -11,7 +11,7 @@ Jen-Yen Chang<sup><sup>1</sup></sup>, Thomas Westfechtel <sup><sup>1</sup></sup>
 #### Updates
 - 2024.10.18 : Paper accepted by TMLR 2024
 - 2024.10.22 : Code release
-
+- 2024.10.28 : [Project page](https://isatine.xyz/projects/offlineRL_domain_adversarial)
 
 ---
 
